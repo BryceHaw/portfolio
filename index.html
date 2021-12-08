@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome - Bryce Haw</title>
+</head>
+<body onload="welcomeText()">
+<div class="navbar" id="navbar">
+    <a href="#">Welcome</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<h1 id="welcomeText">Welcome!</h1>
+
+
+<div class="container">
+    <!--About ME-->
+    <h1 id="about" class="anchor">About Me</h1>
+
+    <div id="about">
+        <div id="desktop">
+            <img src="./images/me.png" height=200px alt="Me" id="aboutMeImage">
+            <p id="aboutMeText">
+                I am Bryce Haw. I currently live in Milaca, Minneosta. I have graduated from
+                St. Cloud Technical College with a degree in Computer Programming.
+                I started gaining interest in programming when I was 14. I would mess around with
+                C++ not knowing what I was doing. This curiosity led me to pursue a degree in 
+                programming where I learned to code in various Object Oriented Programming languages such as 
+                C#, Java, JavaScript, PHP, Dart, HTML and CSS, as well as languages like NoSQL and MySQL.
+            </p>
+            <hr>
+            <p id="aboutMeText">
+                I love to learn new things and I believe that's why I love to code. 
+                Being able to learn new things everyday
+                and not being able to know everything is exciting. 
+                The stuggle to figure something out and having to spend time to figure it out 
+                is a joy. When I can finally get the issue resolved it gives me so much 
+                excitement that programming could never become dull.
+            </p>
+        </div>
+
+        <!--Show on mobile underphoto-->
+        <div id="mobileOnly">
+            <div id="aboutMeImage-mobile">
+                <img src="./images/me.png" height=200px alt="Me" id="MeImage-mobile">
+            </div>
+            <p id="aboutMeText">
+                Hello, I am Bryce Haw currently living in Milaca, Minneosta. I have recently graduated from
+                St. Cloud Technical College with a degree in Computer Programming.
+                I started gaining interest in programming when I was 14. I would mess around with
+                C++ not knowing exactly what I was doing. This curiosity led me to pursue a degree in 
+                programming where I learned to code in various Object Oriented Programming languages such as 
+                C#, Java, JavaScript, PHP, Dart, HTML and CSS, as well as back-end server languages like NoSQL and MySQL.
+            </p>
+            <hr id="mobileAboutDivider">
+            <p id="aboutMeText">
+                I love to learn new things and I believe that's why I love to code. Being able to learn new things everyday
+                and not being able to know everything is exciting. When I stuggle to figure something out and having to spend
+                time to get it done is a joy. When I finally get the problem fixed it gives me so much excitement that programming
+                will never get old.
+            </p>
+        </div>
+        
+    </div>
+    <hr id="about-divider">
+    <div id="lists">
+        <div id="skills-experience">
+            <div id="skills">
+                <div id="skill-list">
+                    <h1>Skills</h1>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>C#</li>
+                        <li>Java</li>
+                        <li>Flutter</li>
+                        <li>PHP</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>MySQL</li>
+                        <li>NoSQL</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div id="experience">
+                <div id="experience-list">
+                    <h1>Experience</h1>
+                    <ul>
+                        <li>Website Projects</li>
+                            <ul>
+                                <li>Ideal Electric Service</li>
+                                <li>Sells Lake Ranch</li>
+                                <li>RainierMinnesota</li>
+                                <li>BarsNearBy</li>
+                            </ul>
+                        <li>Personal Projects</li>
+                            <ul>
+                                <li>Connect to public API to use and store data in realtime database</li>
+                                <li>Portfolio Website</li>
+                            </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+<!--My Projects-->
+<h1 id="projects" class="anchor"> Featured Projects</h1>
+    <div id="projects">
+        <div class="row">
+            <div class="column">
+                <form action="SellsLakeRanch.html">
+                    <button class="projectButton" id="project1">Sells Lake Ranch</button>
+                </form>
+            </div>
+            <div class="column">
+                <form action="expense.html">
+                    <button class="projectButton" id="project2">Flutter Expense App</button>
+                </form>
+            </div>
+            <div class="column">
+                <form action="trucks.html">
+                    <button class="projectButton" id="project3">Truck Fleet</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+<!--Contact-->
+<h1 id="contact" class="anchor">Contact</h1>
+    <h1 id="contact-header">I'd love to hear from you!</h1>
+    <div id="contact-form">
+        <form action="https://formspree.io/f/xyylrzdg" method="POST">
+            <input type="hidden" name="_subject" value="Contact request" />
+            <br>
+            <input type="email" name="_replyto" placeholder="Your Email" required>
+            <br>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+<!--End container-->
+</div>
+
+
+</body>
+<footer>
+    <a href="mailto:hawbryce@gmail.com?subject=Reaching out from your website!" target="_blank" class="fa fa-google"></a>
+    <a href="https://www.linkedin.com/in/bryce-haw" target="_blank" class="fa fa-linkedin"></a>
+    <a href="https://github.com/BryceHaw" target="_blank" class="fa fa-github"></a>
+</footer>
+    <script src="./javascript/index.js"></script>
+</html>

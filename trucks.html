@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truck Fleet - Bryce Haw</title>
+    <style>
+        .full-img img{
+            width: 90%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <!--Button to return to home page-->
+    <div id="return">
+        <a href="index.html" class="returnButton">
+            <span class="fa fa-arrow-left"></span>
+        </a>
+    </div>
+    <div id="body">
+        <h1 id="title">Truck Fleet</h1>
+        <p id="body-content">
+            Built with JavaScript and Google Firebase. This web app takes trucks based on a check in-out system to identify when a truck may need maintenance.
+            I used Google's realtime database to connect to the back-end where the information about the vehicles are stored.
+        </p>
+
+        <!--Add a break bewteen images and description-->
+        <br>
+            <hr>
+        <br>
+
+        <!--Image Gallery-->
+        <div class="full-img" id="fullImgBox">
+            <img src="images/LevisHorseTraining/about.png" id="fullImg">
+            <span class="fa fa-close" onclick="closeFullImg()"></span>
+        </div>
+
+        <div class="img-gallery">
+            <img src="images/truck-fleet/home.png" onclick="openFullImg(this.src)">
+            <img src="images/truck-fleet/truck-information.png" onclick="openFullImg(this.src)">
+            <img src="images/truck-fleet/reports.png" onclick="openFullImg(this.src)">
+            <img src="images/truck-fleet/new-information.png" onclick="openFullImg(this.src)">
+        </div>
+
+        <!--Button to return to top on mobile-->
+        <div id="back-to-top-button">
+            <a href="#"><button class="back-to-top">Back to top</button></a>
+        </div>
+    </div>
+</body>
+    <script src="./javascript/gallery.js"></script>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sells Lake Ranch - Bryce Haw</title>
+    <style>
+        .full-img img{
+            width: 90%;
+            height: auto;
+            max-width: 1500px;
+        }
+    </style>
+</head>
+<body>
+    <!--Button to return to home page-->
+    <div id="return">
+        <a href="index.html" class="returnButton">
+            <span class="fa fa-arrow-left"></span>
+        </a>
+    </div>
+
+    <div id="body">
+        <h1 id="title">Sells Lake Ranch</h1>
+        <p id="body-content">
+            Built with Wordpress. Sells Lake Ranch is a website designed to let everyone know what is offered
+            and give customers an easy way to be connected. Being able to keep everyone up to date 
+            with blog posts as well as informing everyone that is new by allowing them to view the same updates via the website.
+        </p>
+
+        <!--Add a break bewteen images and description-->
+        <br>
+            <hr>
+        <br>
+
+        <!--Image Gallery-->
+        <div class="full-img" id="fullImgBox">
+            <img src="images/sells-lake-ranch/home.png" id="fullImg">
+            <span class="fa fa-close" onclick="closeFullImg()"></span>
+        </div>
+
+        <div class="img-gallery">
+            <img src="images/sells-lake-ranch/home.png" onclick="openFullImg(this.src)">
+            <img src="images/sells-lake-ranch/blog.png" onclick="openFullImg(this.src)">
+            <img src="images/sells-lake-ranch/services.png" onclick="openFullImg(this.src)">
+            <img src="images/sells-lake-ranch/for-sale.png" onclick="openFullImg(this.src)">
+            <img src="images/sells-lake-ranch/contact.png" onclick="openFullImg(this.src)">
+        </div>
+
+        <!--Button to return to top on mobile-->
+        <div id="back-to-top-button">
+            <a href="#"><button class="back-to-top">Back to top</button></a>
+        </div>
+    </div>
+</body>
+    <script src="./javascript/gallery.js"></script>
+</html>
