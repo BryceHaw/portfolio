@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/content.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./javascript/index.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sells Lake Ranch - Bryce Haw</title>
@@ -14,6 +15,14 @@
             max-width: 1500px;
         }
     </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S8R6H26BLY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-S8R6H26BLY');
+    </script>
 </head>
 <body>
     <!--Button to return to home page-->
@@ -38,16 +47,16 @@
 
         <!--Image Gallery-->
         <div class="full-img" id="fullImgBox">
-            <img src="images/sells-lake-ranch/home.png" id="fullImg">
+            <img src="images/sells-lake-ranch/home.png" id="fullImg" alt="Home Page">
             <span class="fa fa-close" onclick="closeFullImg()"></span>
         </div>
 
         <div class="img-gallery">
-            <img src="images/sells-lake-ranch/home.png" onclick="openFullImg(this.src)">
-            <img src="images/sells-lake-ranch/blog.png" onclick="openFullImg(this.src)">
-            <img src="images/sells-lake-ranch/services.png" onclick="openFullImg(this.src)">
-            <img src="images/sells-lake-ranch/for-sale.png" onclick="openFullImg(this.src)">
-            <img src="images/sells-lake-ranch/contact.png" onclick="openFullImg(this.src)">
+            <img src="images/sells-lake-ranch/home.png" onclick="openFullImg(this.src)" alt="Home Page">
+            <img src="images/sells-lake-ranch/blog.png" onclick="openFullImg(this.src)" alt="blog Page">
+            <img src="images/sells-lake-ranch/services.png" onclick="openFullImg(this.src)" alt="Services Page">
+            <img src="images/sells-lake-ranch/for-sale.png" onclick="openFullImg(this.src)" alt="Sale Page">
+            <img src="images/sells-lake-ranch/contact.png" onclick="openFullImg(this.src)" alt="Contact Page">
         </div>
 
         <!--Button to return to top on mobile-->
